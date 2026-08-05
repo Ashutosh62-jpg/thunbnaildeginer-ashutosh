@@ -24,13 +24,7 @@ const nextConfig = {
     ],
   },
 
-  webpack: (config) => {
-    config.externals.push({
-      sharp: "commonjs sharp",
-      canvas: "commonjs canvas",
-    });
-    return config;
-  },
+  turbopack: {},
 };
 
 export default nextConfig;
