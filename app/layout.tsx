@@ -6,6 +6,7 @@ import { GalaxyBackground } from '@/components/ui/GalaxyBackground';
 import { ScrollProgress } from '@/components/ui/ScrollProgress';
 import { Navbar } from '@/components/ui/Navbar';
 import { Preloader } from '@/components/ui/Preloader';
+import { Analytics } from '@vercel/analytics/next';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -59,6 +60,7 @@ export default function RootLayout({
         <ScrollProgress />
         <Navbar />
         <main className="relative z-10">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
